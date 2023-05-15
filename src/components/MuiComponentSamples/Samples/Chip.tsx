@@ -3,7 +3,6 @@ import FaceIcon from "@mui/icons-material/Face";
 import { Box, Typography } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import Chip from "@mui/material/Chip";
-import React from "react";
 
 export default function ChipExample() {
 

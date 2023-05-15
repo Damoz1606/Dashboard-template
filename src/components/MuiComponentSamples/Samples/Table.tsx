@@ -248,7 +248,7 @@ export default function TableExample() {
   const [rowsPerPage, setRowsPerPage] = React.useState(5)
 
   const handleRequestSort = (
-    event: React.MouseEvent<unknown>,
+    _event: React.MouseEvent<unknown>,
     property: keyof Data
   ) => {
     const isAsc = orderBy === property && order === "asc"
@@ -265,7 +265,7 @@ export default function TableExample() {
     setSelected([])
   }
 
-  const handleClick = (event: React.MouseEvent<unknown>, name: string) => {
+  const handleClick = (_event: React.MouseEvent<unknown>, name: string) => {
     const selectedIndex = selected.indexOf(name)
     let newSelected: string[] = []
 
@@ -285,7 +285,7 @@ export default function TableExample() {
     setSelected(newSelected)
   }
 
-  const handleChangePage = (event: unknown, newPage: number) => {
+  const handleChangePage = (_event: unknown, newPage: number) => {
     setPage(newPage)
   }
 

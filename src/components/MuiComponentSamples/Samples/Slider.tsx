@@ -33,7 +33,7 @@ export default function SliderExample() {
 
   const [value, setValue] = React.useState<number | number[]>(30)
 
-  const handleChange = (event: Event, newValue: number | number[]) => {
+  const handleChange = (_event: Event, newValue: number | number[]) => {
     setValue(newValue)
   }
 

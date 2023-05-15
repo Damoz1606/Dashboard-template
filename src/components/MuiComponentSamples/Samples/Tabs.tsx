@@ -43,7 +43,7 @@ function a11yProps(index: any) {
 export default function TabsExample() {
   const [value, setValue] = React.useState(0)
 
-  const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
+  const handleChange = (_event: React.ChangeEvent<{}>, newValue: number) => {
     setValue(newValue)
   }
 
